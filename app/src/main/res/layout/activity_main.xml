@@ -1,0 +1,28 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start 10 Services!"
+        android:id="@+id/buttonStart10"
+        android:onClick="clickedOnStart"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start 100 Service!"
+        android:id="@+id/buttonStart100"
+        android:onClick="clickedOnStart"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start 1000 Service!"
+        android:id="@+id/buttonStart1000"
+        android:onClick="clickedOnStart"/>
+
+</LinearLayout>
