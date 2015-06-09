@@ -25,4 +25,11 @@
         android:id="@+id/buttonStart1000"
         android:onClick="clickedOnStart"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Service!"
+        android:id="@+id/StopService"
+        android:onClick="clickedOnStop"/>
+
 </LinearLayout>

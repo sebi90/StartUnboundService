@@ -36,7 +36,6 @@ public class MainActivity extends Activity {
                 Log.d(this.getClass().getName(), "starting service (" +
                         android.os.Process.myPid() + "-" +
                         Thread.currentThread().getName() + ")" + "count: " + count);
-                //startService(new Intent(this, MyUnboundService.class).putExtra("count", count));
                 intent = new Intent("sebi.UNBOUND_SERVICE");
                 intent.putExtra("count",count);
                 break;
@@ -46,7 +45,6 @@ public class MainActivity extends Activity {
                 Log.d(this.getClass().getName(), "starting service (" +
                         android.os.Process.myPid() + "-" +
                         Thread.currentThread().getName() + ")" + "count: " + count);
-                //startService(new Intent(this, MyUnboundService.class).putExtra("count", count));
                 intent = new Intent("sebi.UNBOUND_SERVICE");
                 intent.putExtra("count",count);
                 break;
@@ -56,7 +54,6 @@ public class MainActivity extends Activity {
                 Log.d(this.getClass().getName(), "starting service (" +
                         android.os.Process.myPid() + "-" +
                         Thread.currentThread().getName() + ")" + "count: " + count);
-                //startService(new Intent(this, MyUnboundService.class).putExtra("count", count));
                 intent = new Intent("sebi.UNBOUND_SERVICE");
                 intent.putExtra("count",count);
                 break;
@@ -68,6 +65,16 @@ public class MainActivity extends Activity {
 
     }
 
+    public void clickedOnStop(View view)
+    {
+        Log.d(this.getClass().getName(), "stopping service (" +
+                android.os.Process.myPid() + "-" +
+                Thread.currentThread().getName() + ")" + "count: " + count);
+        intent = new Intent("sebi.UNBOUND_SERVICE");
+        intent.setPackage("sebi.unboundservice");
+        stopService(intent);
+
+    }
 
 
 
