@@ -65,6 +65,7 @@ public class MainActivity extends Activity {
 
     }
 
+
     public void clickedOnStop(View view)
     {
         Log.d(this.getClass().getName(), "stopping service (" +
